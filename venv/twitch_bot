@@ -5,10 +5,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
 
-servico = Service(r'D:\Arquivos\Python_programas\chromedriver.exe')
-options = webdriver.ChromeOptions()
-options.add_argument(r"--user-data-dir=C:\Users\Pazote\AppData\Local\Google\Chrome\User Data")
-options.add_argument("profile-directory=Profile 3")
-driver = webdriver.Chrome(chrome_options=options, service=servico)
+#https://github.com/mozilla/geckodriver/releases
+driver = webdriver.Edge(r'venv\msedgedriver.exe')
 
-driver.get("https://www.google.com/")
+while(True):
+    driver.get('https://www.twitch.tv/cabrito_montes')
